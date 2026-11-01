@@ -1,0 +1,23 @@
+[
+  {
+    "id": "q1",
+    "question": "What projects has the agent worked on recently?",
+    "type": "single_hop",
+    "gold_answer": "The agent has worked on KGIRS (a Neo4j knowledge-graph retrieval micro-project) and a full-stack user analytics application.",
+    "gold_chunk_ids": ["kgir_project.md:0"]
+  },
+  {
+    "id": "q2",
+    "question": "What decisions were made about the tech stack?",
+    "type": "multi_hop",
+    "gold_answer": "The tech stack uses Neo4j 5.x with native vector index for hybrid retrieval, sentence-transformers (all-MiniLM-L6-v2) for embeddings, and a Gemini LLM for extraction and answers. The architecture stores entities with provenance and uses MERGE for idempotent writes.",
+    "gold_chunk_ids": ["kgir_project.md:3", "kgir_project.md:4"]
+  },
+  {
+    "id": "q3",
+    "question": "What tools does the current project depend on?",
+    "type": "cross_session",
+    "gold_answer": "The current analytics app depends on Node/Express, MongoDB Atlas, React+Vite, vanilla JS tracker, Render deployment, Playwright verification, and design tokens (flat 2px radius, Inter font). The KGIRS research depends on Neo4j, sentence-transformers, and the Gemini SDK.",
+    "gold_chunk_ids": ["kgir_project.md:5", "kgir_project.md:6"]
+  }
+]
